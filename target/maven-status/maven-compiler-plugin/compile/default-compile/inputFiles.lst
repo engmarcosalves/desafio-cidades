@@ -1,0 +1,14 @@
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\model\DetalheErro.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\resource\rest\CidadeRestController.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\model\UF.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\dao\CidadeDaoImpl.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\resource\exception\RestExceptionHandler.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\config\SpringJpaConfig.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\service\CidadeService.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\exception\NotExistDaoException.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\config\SpringInitConfig.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\exception\NotValidIdServiceException.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\config\SpringRootConfig.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\model\Cidade.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\dao\CidadeDao.java
+D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\service\CidadeServiceImpl.java

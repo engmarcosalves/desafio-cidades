@@ -1,9 +1,8 @@
-package br.com.geekcode.marcos.desafio.service.impl;
+package br.com.geekcode.marcos.desafio.service;
 
 import br.com.geekcode.marcos.desafio.dao.CidadeDao;
 import br.com.geekcode.marcos.desafio.exception.NotValidIdServiceException;
 import br.com.geekcode.marcos.desafio.model.Cidade;
-import br.com.geekcode.marcos.desafio.service.CidadeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

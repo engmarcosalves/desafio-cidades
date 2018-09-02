@@ -20,7 +20,7 @@ public class SpringJpaConfig {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
         ds.setUrl("jdbc:mysql://localhost:3306/db_cidades?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC");
-        ds.setUsername("Marcos");
+        ds.setUsername("root");
         ds.setPassword("Marcos#123");
         return ds;
     }

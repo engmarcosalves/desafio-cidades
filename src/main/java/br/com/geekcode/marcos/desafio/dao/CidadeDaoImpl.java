@@ -1,14 +1,15 @@
-package br.com.geekcode.marcos.desafio.dao.impl;
+package br.com.geekcode.marcos.desafio.dao;
 
-import br.com.geekcode.marcos.desafio.dao.CidadeDao;
 import br.com.geekcode.marcos.desafio.exception.NotExistDaoException;
 import br.com.geekcode.marcos.desafio.model.Cidade;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+@Repository
 public class CidadeDaoImpl implements CidadeDao {
 
     @PersistenceContext

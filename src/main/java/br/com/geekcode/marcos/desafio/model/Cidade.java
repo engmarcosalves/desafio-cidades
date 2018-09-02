@@ -1,15 +1,17 @@
 package br.com.geekcode.marcos.desafio.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "cidades")
+@Table(name = "cidades",
+        indexes = { @Index(
+                columnList = "nome,uf",
+                unique = true,
+                name = "unique_nome_uf")
+        }
+)
 public class Cidade implements Serializable {
-    private static final long serialVersionUID = -8492248793363379693L;
 
     @Id
     @Column(name = "ibge_id")
