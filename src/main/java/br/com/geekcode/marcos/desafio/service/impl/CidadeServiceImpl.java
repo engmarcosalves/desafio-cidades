@@ -1,6 +1,7 @@
 package br.com.geekcode.marcos.desafio.service.impl;
 
 import br.com.geekcode.marcos.desafio.dao.CidadeDao;
+import br.com.geekcode.marcos.desafio.exception.NotValidIdServiceException;
 import br.com.geekcode.marcos.desafio.model.Cidade;
 import br.com.geekcode.marcos.desafio.service.CidadeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +49,7 @@ public class CidadeServiceImpl implements CidadeService {
 
     private Long idValido(Long ibgeId) {
         if (ibgeId <= 0) {
-            throw new NotValidIdException("Valor do campo ibgeId está inválido. " +
+            throw new NotValidIdServiceException("Valor do campo ibgeId está inválido. " +
                     "Deve ser um valor inteiro maior que zero.");
         }
         return ibgeId;
