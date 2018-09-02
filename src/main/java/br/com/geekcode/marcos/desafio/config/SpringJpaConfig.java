@@ -29,7 +29,7 @@ public class SpringJpaConfig {
     public EntityManagerFactory entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(dataSource());
-        factory.setPackagesToScan("br.com.geekcode.marcos.desafio.domain");
+        factory.setPackagesToScan("br.com.geekcode.marcos.desafio.model");
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         factory.setJpaProperties(jpaProperties());
         factory.afterPropertiesSet();
