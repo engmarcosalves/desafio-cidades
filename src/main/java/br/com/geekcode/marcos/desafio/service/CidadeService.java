@@ -15,4 +15,6 @@ public interface CidadeService {
     Cidade findById(Long ibgeId);
 
     List<Cidade> findAll();
+
+    String insertAllFromCSV();
 }

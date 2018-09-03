@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.List;
 
 @Service
@@ -44,6 +46,37 @@ public class CidadeServiceImpl implements CidadeService {
     @Transactional(readOnly = true)
     public List<Cidade> findAll() {
         return cidadeDao.findAll();
+    }
+
+    @Override
+    public String insertAllFromCSV() {
+        String caminho = "D:\\Dev\\desafio-cidades\\desafio-cidades.csv";
+        BufferedReader br = null;
+        String cidade = "";
+        try {
+            br = new BufferedReader(new FileReader(caminho));
+            cidade = br.readLine();// pular o cabeçalho
+            while ((cidade = br.readLine()) != null) {
+                String[] arrayCidades = cidade.split(",");
+
+                Cidade cidadeInserir = new Cidade();
+                cidadeInserir.setIbgeId(Long.parseLong(arrayCidades[0]));
+                cidadeInserir.setUf(arrayCidades[1]);
+                cidadeInserir.setNome(arrayCidades[2]);
+                cidadeInserir.setCapital(new Boolean(arrayCidades[3]));
+                cidadeInserir.setLongitude(Double.parseDouble(arrayCidades[4]));
+                cidadeInserir.setLatitude(Double.parseDouble(arrayCidades[5]));
+                cidadeInserir.setSemAcentos(arrayCidades[6]);
+                cidadeInserir.setNomeAlternativo(arrayCidades[7]);
+                cidadeInserir.setMigroRegiao(arrayCidades[8]);
+                cidadeInserir.setMesoRegiao(arrayCidades[9]);
+
+                this.save(cidadeInserir);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "Arquivo CSV populado com sucesso!";
     }
 
     private Long idValido(Long ibgeId) {

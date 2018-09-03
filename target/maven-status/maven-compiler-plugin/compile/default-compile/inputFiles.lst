@@ -1,6 +1,5 @@
 D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\model\DetalheErro.java
 D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\resource\rest\CidadeRestController.java
-D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\model\UF.java
 D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\dao\CidadeDaoImpl.java
 D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\resource\exception\RestExceptionHandler.java
 D:\Dev\desafio-cidades\src\main\java\br\com\geekcode\marcos\desafio\config\SpringJpaConfig.java

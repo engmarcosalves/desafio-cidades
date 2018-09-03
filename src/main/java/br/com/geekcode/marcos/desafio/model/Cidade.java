@@ -4,13 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "cidades",
-        indexes = { @Index(
-                columnList = "nome,uf",
-                unique = true,
-                name = "unique_nome_uf")
-        }
-)
+@Table(name = "cidades")
 public class Cidade implements Serializable {
 
     @Id
@@ -32,7 +26,7 @@ public class Cidade implements Serializable {
     private double latitude;
 
     @Column(name="sem_acentos")
-    private String no_acentos;
+    private String semAcentos;
 
     @Column(name = "nome_alternativo")
     private String nomeAlternativo;
@@ -91,12 +85,12 @@ public class Cidade implements Serializable {
         this.latitude = latitude;
     }
 
-    public String getNo_acentos() {
-        return no_acentos;
+    public String getSemAcentos() {
+        return semAcentos;
     }
 
-    public void setNo_acentos(String no_acentos) {
-        this.no_acentos = no_acentos;
+    public void setSemAcentos(String semAcentos) {
+        this.semAcentos = semAcentos;
     }
 
     public String getNomeAlternativo() {
