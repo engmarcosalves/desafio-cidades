@@ -15,4 +15,6 @@ public interface CidadeDao {
     Cidade findById(Long ibgeId);
 
     List<Cidade> findAll();
+
+    List<Cidade> findByCapitalOrderByNomeAsc(boolean capital);
 }

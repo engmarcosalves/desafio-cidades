@@ -11,3 +11,4 @@
 0:0:0:0:0:0:0:1 - - [02/Sep/2018:20:47:43 -0300] "GET /api/cidades/carregarcsv HTTP/1.1" 500 16264 http-bio-9090-exec-2 1036
 0:0:0:0:0:0:0:1 - - [02/Sep/2018:21:01:35 -0300] "GET /api/cidades/carregarcsv HTTP/1.1" 500 16264 http-bio-9090-exec-2 1082
 0:0:0:0:0:0:0:1 - - [02/Sep/2018:21:02:37 -0300] "GET /api/cidades/carregarcsv HTTP/1.1" 500 16264 http-bio-9090-exec-2 1042
+0:0:0:0:0:0:0:1 - - [02/Sep/2018:21:03:32 -0300] "GET /api/cidades/carregarcsv HTTP/1.1" 200 33 http-bio-9090-exec-2 7358

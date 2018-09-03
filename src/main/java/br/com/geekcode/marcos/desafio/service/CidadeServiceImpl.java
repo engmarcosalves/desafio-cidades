@@ -86,4 +86,9 @@ public class CidadeServiceImpl implements CidadeService {
         }
         return ibgeId;
     }
+
+    @Override
+    public List<Cidade> listAllCapital(boolean isCapital) {
+        return cidadeDao.findByCapitalOrderByNomeAsc(true);
+    }
 }

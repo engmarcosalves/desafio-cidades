@@ -26,6 +26,11 @@ public class CidadeRestController {
         return service.insertAllFromCSV();
     }
 
+    @GetMapping("/capitais")
+    public List<Cidade> getCapitais(){
+        return service.listAllCapital(true);
+    }
+
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Cidade> listar() {

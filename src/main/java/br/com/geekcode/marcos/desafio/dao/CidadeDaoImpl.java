@@ -50,4 +50,10 @@ public class CidadeDaoImpl implements CidadeDao {
         return entityManager.createQuery("select c from Cidade c", Cidade.class)
                 .getResultList();
     }
+
+    @Override
+    public List<Cidade> findByCapitalOrderByNomeAsc(boolean capital) {
+        return entityManager.createQuery("select c from Cidade c where c.capital = " + capital + " order by c.nome", Cidade.class)
+                .getResultList();
+    }
 }

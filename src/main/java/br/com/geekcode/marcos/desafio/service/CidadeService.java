@@ -17,4 +17,6 @@ public interface CidadeService {
     List<Cidade> findAll();
 
     String insertAllFromCSV();
+
+    List<Cidade> listAllCapital(boolean isCapital);
 }
