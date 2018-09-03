@@ -91,4 +91,9 @@ public class CidadeServiceImpl implements CidadeService {
     public List<Cidade> listAllCapital(boolean isCapital) {
         return cidadeDao.findByCapitalOrderByNomeAsc(true);
     }
+
+    @Override
+    public List<Object[]> getQtdCidadesEstado() {
+        return cidadeDao.getQtdCidadesPorEstado();
+    }
 }

@@ -56,4 +56,12 @@ public class CidadeDaoImpl implements CidadeDao {
         return entityManager.createQuery("select c from Cidade c where c.capital = " + capital + " order by c.nome", Cidade.class)
                 .getResultList();
     }
+
+
+    @Override
+    public List<Object[]> getQtdCidadesPorEstado() {
+        List <Object[]> lista = (List<Object[]>) entityManager.createNativeQuery("select a, COUNT(a) FROM Cidade a GROUP BY a.estado")
+                .getResultList();
+        return lista;
+    }
 }

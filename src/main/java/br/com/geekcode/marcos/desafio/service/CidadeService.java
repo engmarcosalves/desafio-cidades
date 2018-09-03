@@ -19,4 +19,6 @@ public interface CidadeService {
     String insertAllFromCSV();
 
     List<Cidade> listAllCapital(boolean isCapital);
+
+    List<Object[]> getQtdCidadesEstado();
 }

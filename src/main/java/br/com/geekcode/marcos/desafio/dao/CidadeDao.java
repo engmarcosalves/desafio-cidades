@@ -17,4 +17,6 @@ public interface CidadeDao {
     List<Cidade> findAll();
 
     List<Cidade> findByCapitalOrderByNomeAsc(boolean capital);
+
+    List<Object[]> getQtdCidadesPorEstado();
 }
