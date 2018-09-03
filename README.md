@@ -12,3 +12,10 @@ Web API desenvolvido em JAVA com as seguintes tecnologias:
 * Maven 3
 * Postman (para testes da API)
 * IntelliJ IDEA 2018.2.2 (Community Edition)
+
+--- 
+
+OBS: Para funcionar deverá renomear o CSV para desafio-cidades.csv e alterar o path na classe "CidadeServiceImpl.java"
+
+1. Ler o arquivo CSV das cidades para a base de dados;
+>> Rota ("http://localhost:9090/api/cidades/carregarcsv") com GET, irá popular o database com base no csv desafio-cidades.csv 
